@@ -1,11 +1,19 @@
 module.exports = {
     title: 'Power\'s Wiki',
-
     base: '/Wiki-vp/',
     themeConfig: {
+        logo: '/logo.png',
+        lastUpdated: 'Last Updated',
 
+        repo: 'linyuxuanlin/Wiki-vp',
+        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        repoLabel: '本站源码',
+        docsDir: 'docs',
+        editLinks: true,
+        // 默认为 "Edit this page"
+        editLinkText: '在 GitHub 上编辑此页面',
 
-        //navbar: false,
         nav: [{
                 text: 'Home',
                 link: '/'
@@ -22,12 +30,6 @@ module.exports = {
 
 
         sidebar: [
-
-
-
-
-
-
 
             {
                 title: '电路设计',
@@ -52,22 +54,16 @@ module.exports = {
                     "post/电路设计/自制CMSIS-DAP",
                     "post/电路设计/PCB名片设计",
                     "post/电路设计/焊接比赛：培训及总结",
-
                 ]
             },
-
-
             {
                 title: '无人机',
                 collapsable: false,
                 sidebarDepth: 0,
                 children: [
                     "post/无人机/N3参数调试",
-
                 ]
             },
-
-
             {
                 title: '产品经理',
                 collapsable: false,
@@ -76,11 +72,8 @@ module.exports = {
                     "post/产品经理/产品经理的日常",
                     "post/产品经理/中台的概念",
                     "post/产品经理/画图基础",
-
                 ]
             },
-
-
             {
                 title: '活动策划',
                 collapsable: false,
@@ -90,8 +83,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: 'Arduino',
                 collapsable: false,
@@ -102,11 +93,8 @@ module.exports = {
                     "post/Arduino/麦昆小车-测评",
                     "post/Arduino/一个舵机的自我修养",
                     "post/Arduino/麦轮小车",
-
                 ]
             },
-
-
             {
                 title: 'STM32',
                 collapsable: false,
@@ -115,22 +103,16 @@ module.exports = {
                     "post/STM32/KeilMDK配置指南",
                     "post/STM32/Doxygen注释规范",
                     "post/STM32/STM32麦轮小车",
-
                 ]
             },
-
-
             {
                 title: '树莓派',
                 collapsable: false,
                 sidebarDepth: 0,
                 children: [
                     "post/树莓派/云打印服务器搭建",
-
                 ]
             },
-
-
             {
                 title: '前端',
                 collapsable: false,
@@ -142,22 +124,16 @@ module.exports = {
                     "post/前端/自适应网页设计",
                     "post/前端/Node.js和npm的安装与卸载（MacOS）",
                     "post/前端/前端开发-环境搭建",
-
                 ]
             },
-
-
             {
                 title: '微信小程序',
                 collapsable: false,
                 sidebarDepth: 0,
                 children: [
                     "post/微信小程序/BookJourney-二手书商城",
-
                 ]
             },
-
-
             {
                 title: '命令行',
                 collapsable: false,
@@ -167,8 +143,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: 'Git&GitHub',
                 collapsable: false,
@@ -181,8 +155,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: '效率',
                 collapsable: false,
@@ -202,8 +174,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: '音乐',
                 collapsable: false,
@@ -214,8 +184,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: '美食',
                 collapsable: false,
@@ -226,8 +194,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: '比赛经历',
                 collapsable: false,
@@ -238,8 +204,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: '生活方式',
                 collapsable: false,
@@ -252,8 +216,6 @@ module.exports = {
 
                 ]
             },
-
-
             {
                 title: '摘录',
                 collapsable: false,
@@ -307,11 +269,8 @@ module.exports = {
                     "post/摘录/追风筝的人",
                     "post/摘录/三体",
                     "post/摘录/反脆弱：从不确定性中获益",
-
                 ]
             },
-
-
             {
                 title: '言论',
                 collapsable: false,
@@ -321,25 +280,8 @@ module.exports = {
                     "post/言论/财富",
                     "post/言论/创业",
                     "post/言论/个人发展",
-
                 ]
             },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         ]
-
     }
 }
