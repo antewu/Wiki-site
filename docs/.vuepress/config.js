@@ -1,10 +1,31 @@
 module.exports = {
     title: 'Power\'s Wiki',
     base: '/Wiki-vp/',
-    themeConfig: {
-        logo: '/logo.png',
-        lastUpdated: 'Last Updated',
+    plugins: [
+        '@vuepress/back-to-top',
+        '@vuepress/google-analytics',
+        {
+            'ga': '' // UA-00000000-0
+        },
+    ],
+    //theme: 'reco', //reco 主题，会拖慢加载速度
 
+    // 解决搜索框放大问题
+    head: [
+        ['meta', {
+            name: 'viewport',
+            content: 'width=device-width,initial-scale=1,user-scalable=no'
+        }]
+    ],
+
+    themeConfig: {
+
+        //logo: '/logo.png', 
+        lastUpdated: 'Last Updated',
+        smoothScroll: true, // 干嘛用的？
+
+
+        // Edit on GitHub
         repo: 'linyuxuanlin/Wiki-vp',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
@@ -13,6 +34,12 @@ module.exports = {
         editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: '在 GitHub 上编辑此页面',
+
+        themePicker: {
+            colorName1: 'red',
+            colorName2: 'yellow',
+            colorName3: 'blue'
+        },
 
         nav: [{
                 text: 'Home',
