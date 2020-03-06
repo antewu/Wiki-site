@@ -2,11 +2,31 @@ module.exports = {
     title: 'Power\'s Wiki',
     base: '/Wiki-vp/',
     plugins: [
-        '@vuepress/back-to-top',
+        '@vuepress/back-to-top', // 回到顶部
         '@vuepress/google-analytics',
         {
             'ga': '' // UA-00000000-0
         },
+
+        // RSS 插件
+        'vuepress-plugin-rss',
+        {
+            base_url: '/', // required
+            site_url: 'https://wiki-power.com', // required
+            copyright: '2020 Power Lin', // optional
+            // filter some post
+            filter: (frontmatter) => {
+                return [true | false]
+            },
+            // How much articles
+            count: 100,
+        },
+
+        // 阅读进度
+        'reading-progress',
+
+        // 代码块一键复制按钮
+        ['vuepress-plugin-code-copy', true],
     ],
     //theme: 'reco', //reco 主题，会拖慢加载速度
 
