@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Power\'s Wiki',
-    base: '/Wiki-vp/',
+    //base: '/Wiki-site/',
     plugins: [
         '@vuepress/back-to-top', // 回到顶部
         '@vuepress/google-analytics',
@@ -46,7 +46,7 @@ module.exports = {
 
 
         // Edit on GitHub
-        repo: 'linyuxuanlin/Wiki-vp',
+        repo: 'linyuxuanlin/Wiki-site',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: '本站源码',

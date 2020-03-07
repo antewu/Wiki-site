@@ -15,7 +15,7 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-# Power's Wiki
+# Power's Wiki1
 
 Hello there!
 
