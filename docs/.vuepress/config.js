@@ -1,6 +1,27 @@
 module.exports = {
     title: 'Power\'s Wiki',
+    description: '个人知识库',
     //base: '/Wiki-site/',
+
+    locales: {
+        '/': {
+            lang: 'zh-CN',
+        }
+    },
+
+    // PWA
+    '@vuepress/pwa': {
+        serviceWorker: true,
+        updatePopup: {
+            message: "发现新内容可用.",
+            buttonText: "刷新",
+            // 自定义弹窗
+            // popupComponent: 'MySWUpdatePopup',
+        }
+    },
+
+
+
     plugins: [
         '@vuepress/back-to-top', // 回到顶部
         '@vuepress/google-analytics',
@@ -32,6 +53,10 @@ module.exports = {
 
     // 解决搜索框放大问题
     head: [
+        ['link', {
+            rel: 'icon',
+            href: '/favicon.ico'
+        }],
         ['meta', {
             name: 'viewport',
             content: 'width=device-width,initial-scale=1,user-scalable=no'
