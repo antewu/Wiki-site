@@ -23,7 +23,7 @@ module.exports = {
 
 
     plugins: [
-        '@vuepress/back-to-top', // 回到顶部
+        //'@vuepress/back-to-top', // 回到顶部
         '@vuepress/google-analytics',
         {
             'ga': '' // UA-00000000-0
