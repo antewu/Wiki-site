@@ -23,7 +23,7 @@ module.exports = {
 
 
     plugins: [
-        '@vuepress/back-to-top', // 回到顶部
+        //'@vuepress/back-to-top', // 回到顶部
         '@vuepress/google-analytics',
         {
             'ga': '' // UA-00000000-0
@@ -50,7 +50,7 @@ module.exports = {
         ['vuepress-plugin-code-copy', true],
     ],
     //theme: 'reco', //reco 主题，会拖慢加载速度
-    //theme: 'antdocs',
+    theme: 'antdocs',
 
     // 解决搜索框放大问题
     head: [
