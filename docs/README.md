@@ -15,9 +15,8 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-# Power's Wiki1
+# Power's Wiki
 
-12334324234
 Hello there!
 
 这儿是我的个人知识库，用于将知识结构化归档。  
