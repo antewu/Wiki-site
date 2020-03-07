@@ -50,6 +50,7 @@ module.exports = {
         ['vuepress-plugin-code-copy', true],
     ],
     //theme: 'reco', //reco 主题，会拖慢加载速度
+    theme: 'antdocs',
 
     // 解决搜索框放大问题
     head: [
